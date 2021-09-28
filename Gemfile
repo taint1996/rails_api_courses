@@ -28,6 +28,8 @@ gem 'devise'
 gem 'simple_token_authentication', '~> 1.0'
 gem 'koala'
 
+gem 'faker'
+
 
 
 group :development, :test do

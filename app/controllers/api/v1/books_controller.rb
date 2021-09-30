@@ -2,7 +2,7 @@ class Api::V1::BooksController < ApplicationController
   before_action :load_book, only: :show
 
   def index
-    @books = Book.all.order(created_at: :desc)
+    @books = Book.all.includes(:reviews).order(created_at: :desc)
     books_serializer = parse_json @books
     json_response "Index Books", true, { books: books_serializer}, :ok
   end

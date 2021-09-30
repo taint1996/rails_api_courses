@@ -1,7 +1,7 @@
 class BookSerializer < ActiveModel::Serializer
-  attributes :id, :title, :author, :image, :total_reviews #:average_rating_of_book, :content_rating_of_book, :recommend_rating_of_book, :total_reviews
+  attributes :id, :title, :author, :image# , :total_reviews #:average_rating_of_book, :content_rating_of_book, :recommend_rating_of_book, :total_reviews
 
-  # has_many :reviews
+  has_many :reviews
 
   # def average_rating_of_book
   #   object.reviews.count == 0 ? 0 : object.reviews.average(:average_rating).round(1)
@@ -15,7 +15,7 @@ class BookSerializer < ActiveModel::Serializer
   #   object.reviews.count == 0 ? 0 : object.reviews.average(:recommend_rating).round(1)
   # end
 
-  def total_reviews
-    object.reviews_count
-  end
+  # def total_reviews
+  #   object.reviews_count
+  # end
 end

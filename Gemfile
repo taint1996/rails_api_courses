@@ -29,6 +29,7 @@ gem 'simple_token_authentication', '~> 1.0'
 gem 'koala'
 
 gem 'faker'
+gem 'active_model_serializers', '~> 0.10.0'
 
 
 

@@ -30,7 +30,7 @@ gem 'koala'
 
 gem 'faker'
 gem 'active_model_serializers', '~> 0.10.0'
-
+gem 'counter_culture', '~> 2.0'
 
 
 group :development, :test do
